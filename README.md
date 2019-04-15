@@ -1,6 +1,8 @@
 # KOPS
 How to use Kops to ensure K8s cluster HA
 
+#### Important: Kubernetes cluster version will be read from your kubectl binary, usually at /usr/local/bin/ 
+
 ### Creating a K8s cluster with kops:
 
 1. Create an user with its sets of keys (AWS user created via IAM) with S3/R53/EC2/VPC/IAM admin access role permissions.
