@@ -32,7 +32,7 @@ kops create secret --name <your-subdomain.example.com> sshpublickey admin -i ~/.
 
 7. Create cluster configuration (it's like a dry-run):
 ```
-kops create cluster --node-count=2 --node-size=t2.small --node-volume-size=8 --master-volume-size=8 --zones=us-east-1a --name=yoursubdomain.example.com --master-size=t2.small --master-count=1 --dns-zone=yoursubdomain.example.com --ssh-public-key=~/.ssh/yourkey.pub
+kops create cluster --node-count=2 --node-size=t2.medium --node-volume-size=8 --master-volume-size=8 --zones=us-east-1a --name=yoursubdomain.example.com --master-size=t2.medium --master-count=1 --dns-zone=yoursubdomain.example.com --ssh-public-key=~/.ssh/yourkey.pub
 ```
  
  #### Note:
